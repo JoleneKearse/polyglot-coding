@@ -51,4 +51,17 @@ dfn {
   border-bottom: .09rem dotted;
 }
 
+ul {
+  display: block;
+  max-width: 30ch;
+  margin: auto;
+  padding: 2rem;
+  border-radius: .5rem;
+  list-style-type: disc;
+  background: rgb(0, 0, 0, 0.5);
+  -webkit-box-shadow: 10px 14px 49px 10px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 14px 49px 10px rgba(0,0,0,0.75);
+box-shadow: 10px 14px 49px 10px rgba(0,0,0,0.75);
+}
+
 

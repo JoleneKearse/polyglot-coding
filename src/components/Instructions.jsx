@@ -8,7 +8,7 @@ const Instructions = () => {
       <p>It gave me a chance to discover new features of <b className="language">Python</b> and skill up.</p>
       <p>I also wanted to become more comfortable in <b className="language">C#</b>, so I re-wrote many of the projects in it.</p>
       <p>I decided to also write them in <b className="language">JavaScript</b> to demystify them.</p>
-      <p>Checkout any of these projects to:</p>
+      <p>Each project let's you:</p>
       <ul>
         <li>Get a sense of the MVP.</li>
         <li>Play around with the <b className="language">JavaScript</b> implementation.</li>
