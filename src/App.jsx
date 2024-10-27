@@ -1,5 +1,6 @@
 import './App.css'
 import Header from './components/Header'
+import Instructions from './components/Instructions'
 
 function App() {
   return (
@@ -7,6 +8,9 @@ function App() {
       <div className="container">
         <Header title="< Polygot Coding />" />
       </div>
+      <main>
+        <Instructions />
+      </main>
     </>
   )
 }
