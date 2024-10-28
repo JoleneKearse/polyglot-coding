@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div className="container">
-        <Header title="< Polygot Coding />" />
+        <Header title="< Polyglot Coding />" />
         <main>
           <Instructions />
           
