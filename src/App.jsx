@@ -10,8 +10,11 @@ function App() {
         <Header title="< Polygot Coding />" />
         <main>
           <Instructions />
-          <Project title="Password Strength Checker" />
+          
         </main>
+      </div>
+      <div>
+      <Project title="Password Strength Checker" />
       </div>
     </>
   )
