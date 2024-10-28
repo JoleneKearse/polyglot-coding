@@ -1,6 +1,6 @@
 const Header = ({ title }) => {
   return (
-    <header>
+    <header className="header">
       <h1>{title}</h1>
       <div className="logo-box">
         <img src="/JavaScript.png" alt="JavaScript" className="logo-header" />

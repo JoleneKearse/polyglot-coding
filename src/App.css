@@ -1,4 +1,10 @@
 #root {
+  --purple-light: #e774de;
+  --salmon: #ff8b91;
+  --orange: #ffd461;
+  --python-blue: #3f7cae;
+  --background: #260b2d;
+  --link: #9780f3;
   width: 100%;
   margin: 0 auto;
   padding: 2rem;
@@ -7,6 +13,8 @@
   font-size: 1.25rem;
   color:antiquewhite;
   text-wrap: balance;
+  line-height: 1.75rem;
+  background: var(--background)
 }
 
 .container {
@@ -14,8 +22,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 120ch;
   height:max-content;
+}
+
+header {
+  margin-bottom: 6rem;
+}
+
+article {
+  padding: 6rem 0;
+}
+
+.project {
+  width: max-content;
+  padding: 1rem 1rem 3rem 1rem;
+  border: 2px solid black;
+  border-radius: 5rem;
+  background: #24242488;
+}
+
+.javascript {
+  color: #f0db4f;
 }
 
 .logo-box {
@@ -31,8 +58,35 @@
 }
 
 h1 {
-  margin-bottom: 1rem;
-  color:aqua;
+  line-height: 6rem;
+  background: linear-gradient(45deg, var(--purple-light), var(--salmon), var(--orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  color:var(--salmon);
+}
+
+h3 {
+  color:var(--orange);
+  text-shadow: .25rem .5rem 1rem #f9f87188;
+}
+
+h4 {
+  color:var(--python-blue);
+  text-shadow: .25rem .5rem .75rem #5ab2fab3;
+}
+
+dfn {
+  font-style: normal;
+  cursor: pointer;
+  border-bottom: .09rem dotted;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
 }
 
 .text-box-main {
@@ -41,14 +95,13 @@ h1 {
   line-height: 2.25rem;
 }
 
-.language {
-  color: #f0f0f0;
+.text-box {
+  max-width: 50ch;
+  margin: auto;
 }
 
-dfn {
-  font-style: normal;
-  cursor: pointer;
-  border-bottom: .09rem dotted;
+.language {
+  color: var(--purple-light);
 }
 
 ul {
@@ -58,10 +111,9 @@ ul {
   padding: 2rem;
   border-radius: .5rem;
   list-style-type: disc;
+  text-align: left;
   background: rgb(0, 0, 0, 0.5);
   -webkit-box-shadow: 10px 14px 49px 10px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 14px 49px 10px rgba(0,0,0,0.75);
-box-shadow: 10px 14px 49px 10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 14px 49px 10px rgba(0,0,0,0.75);
+  box-shadow: 10px 14px 49px 10px rgba(0,0,0,0.75);
 }
-
-
