@@ -84,6 +84,7 @@ article {
 .text-box {
   max-width: 50ch;
   margin: auto;
+  font-weight: 600;
 }
 
 ul {
@@ -165,8 +166,13 @@ h4 {
   background: var(--orange)
 }
 
+i {
+  font-weight: 300;
+}
+
 dfn {
   font-style: normal;
+  font-weight: 500;
   cursor: pointer;
   border-bottom: .09rem dotted;
 }
