@@ -1,11 +1,14 @@
 import Highlight from 'react-highlight.js';
 import "../../src/dracula.css";
 
-const Code = ({ code, language }) => {
+const Code = ({ title, code, language }) => {
   return (
-    <Highlight language={language}>
-      {code}
-    </Highlight>
+    <div className="relative spacing">
+      <h4 className="languageTitle">{title}</h4>
+      <Highlight language={language}>
+        {code}
+      </Highlight>
+    </div>
   )
 }
 

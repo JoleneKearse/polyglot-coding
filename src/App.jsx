@@ -14,7 +14,7 @@ function App() {
         </main>
       </div>
       <div>
-      <Project title="Password Strength Checker" />
+      <Project />
       </div>
     </>
   )
