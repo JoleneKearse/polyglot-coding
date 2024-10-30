@@ -14,7 +14,8 @@ function App() {
         </main>
       </div>
       <div>
-      <Project />
+        <Project projectKey="ticTacToe" />
+        <Project projectKey="passwordStrengthChecker" />
       </div>
     </>
   )

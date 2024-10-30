@@ -1,41 +1,42 @@
+import React, { Suspense } from "react";
 import { data } from "../data/ProjectInfo";
 import Code from "./Code"
 
-import PasswordStrengthChecker from "./projects/PasswordStrengthChecker";
 
-const Project = () => {
-
-
-  const mvpContent = data[0].passwordStrengthChecker.mvp;
+const Project = ({ projectKey }) => {
+  const projectData = data[0][projectKey];
+  const ProjectComponent = React.lazy(() => import(`./projects/${projectData.componentName}`));
   return (
     <article>
-      <h3>{data[0].passwordStrengthChecker.title}</h3>
+      <h3>{projectData.title}</h3>
       <div className="project-information">
         <div className="project">
           <div className="text-box">
             <h4>MVP</h4>
-            <div dangerouslySetInnerHTML={{ __html: mvpContent }} />
+            <div dangerouslySetInnerHTML={{ __html: projectData.mvp }} />
           </div>
         </div>
         <div className="web">
-          <PasswordStrengthChecker />
+          <Suspense fallback={<div>Loading...</div>}>
+            <ProjectComponent />
+          </Suspense>
         </div>
       </div>
       <div className="project-code">
         <Code
           title="Python"
           language="python"
-          code={data[0].passwordStrengthChecker.code.python}
+          code={projectData.code.python}
         />
         <Code
           title="JavaScript"
           language="javascript"
-          code={data[0].passwordStrengthChecker.code.javascript}
+          code={projectData.code.javascript}
         />
         <Code
           title="C#"
           language="csharp"
-          code={data[0].passwordStrengthChecker.code.csharp}
+          code={projectData.code.csharp}
         />
 
       </div>
