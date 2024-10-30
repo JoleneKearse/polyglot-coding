@@ -28,7 +28,6 @@ const PasswordStrengthChecker = () => {
   return (
     <div className={styles.passwordChecker}>
       <div className={styles.setup}>
-        <h4>Web App Written in JavaScript</h4>
         <label htmlFor="input">Enter your password: </label>
         <input type="text" className={styles.input} id="text" />
       </div>
