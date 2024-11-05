@@ -1,0 +1,31 @@
+.game {
+  height: 30rem;
+  padding: .5rem;
+  background:url("/browser-window-password-strength-checker.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.player {
+  margin-top: 4rem;
+}
+
+.gameBoard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  margin: 2rem auto 0;
+  border: 3px solid #ffd461;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border-radius: 0;
+  outline: 2px solid #ffd461;
+}
+
+.square:hover, .square:focus {
+  outline: #ffd461;
+}

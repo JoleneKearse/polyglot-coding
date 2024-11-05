@@ -1,4 +1,4 @@
-import styles from './PasswordStrengthChecker.module.css'
+import styles from "./PasswordStrengthChecker.module.css"
 
 const PasswordStrengthChecker = () => {
   const strengthDisplay = document.getElementById('strength-display');
